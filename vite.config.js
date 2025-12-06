@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [tailwindcss(), tanstackRouter({
       target: 'react',
       autoCodeSplitting: true,
+      base: "/surpise/"
     }),
     react()
     ],
