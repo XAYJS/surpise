@@ -6,7 +6,7 @@ import { tanstackRouter } from '@tanstack/router-plugin/vite'
 // https://vite.dev/config/
 export default defineConfig({
   // 🟢 CORRECT LOCATION: This tells Vite where your assets live
-  base: "/surpise", 
+  base: "/lover", 
   plugins: [
     tailwindcss(), 
     tanstackRouter({
