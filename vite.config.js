@@ -5,11 +5,15 @@ import { tanstackRouter } from '@tanstack/router-plugin/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [tailwindcss(), tanstackRouter({
+  // 🟢 CORRECT LOCATION: This tells Vite where your assets live
+  base: "/surpise/", 
+  plugins: [
+    tailwindcss(), 
+    tanstackRouter({
       target: 'react',
       autoCodeSplitting: true,
-      base: "/surpise/"
+      // You can remove the 'base' property from here since it's now global
     }),
-    react()
-    ],
+    react()
+  ],
 })
